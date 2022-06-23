@@ -25,7 +25,8 @@ to see all your workspaces use the command: *terraform workspace list*
 to see which workspace is currently active use the command: *terraform workspace show*
 
 ## variables
-the code expects certain variables, you can check the file variables.tf to see which ones, you can pre-set the variables of each workspace by adding them to the .tfvars files(for example production.tfvars for the production workspace) - if you create a new workspace you should create a new .tfvars file for it.
+the code expects certain variables, you can check the file variables.tf to see which ones.
+you can pre-set the variables of each workspace by adding them to the .tfvars files(for example production.tfvars for the production workspace) - if you create a new workspace you should create a new .tfvars file for it.
   
 or you can just set them on runtime.
 
