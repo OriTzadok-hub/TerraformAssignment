@@ -23,7 +23,7 @@ resource "azurerm_availability_set" "avset" {
 # VMs password
 # network interfaces of the VMs
 module "virtualMachines" {
-  depends_on              = [azurerm_resource_group.rg, azurerm_subnet.backendSN, azurerm_subnet.frontendSN, azurerm_availability_set.avset]
+  depends_on              = [azurerm_resource_group.rg, azurerm_subnet.frontendSN, azurerm_availability_set.avset]
   source                  = "./VM_module"
   resource_group_location = azurerm_resource_group.rg.location
   resource_group_name     = azurerm_resource_group.rg.name
